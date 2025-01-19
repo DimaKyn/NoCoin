@@ -1,0 +1,151 @@
+.backgroundDiv {
+  background-image: url("./public/background_gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter:  blur(40px) invert(0);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+}
+
+.title {
+color: white;
+margin-bottom: 1 rem;
+}
+
+.panel {
+margin-top: 2em;
+}
+
+.hero {
+width: 100vw;
+margin-bottom: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.input {
+margin-top: 1em;
+background-image: linear-gradient(to right,#72156396, #ca50b696);
+color: white;
+border: 0px solid;
+border-radius: 5px;
+width: 600px;
+
+height: 35px;
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.inputSmall {
+  margin-top: 1em;
+background-image: linear-gradient(to right,#72156396, #ca50b696);
+color: white;
+border: 0px solid;
+border-radius: 5px;
+width: 200px;
+
+height: 35px;
+font-size: 16px;
+margin-bottom: 20px;
+}
+
+.inputSmall::placeholder {
+  color: white;
+}
+
+.input::placeholder {
+color: white;
+}
+
+.input:focus {
+outline: 2px solid #661156;
+box-shadow: 0 0 10px #000000;
+}
+
+.panel-heading {
+background-image: linear-gradient(to left,#38052F, #070709);
+background-color: black;
+color: white;
+
+}
+
+.address-box {
+padding: 3em;
+}
+
+.box {
+  margin-bottom: 20px;
+}
+
+.box .title {
+color: #333;
+}
+
+.navbar {
+background-color: black;
+}
+
+.navbar .navbar-item {
+color: white;
+}
+
+.connect-wallet span {
+color: #ffffff;
+}
+
+.connect-wallet:hover {
+background-color: #353535 !important;
+}
+
+
+.container {
+margin-top: 2em;
+background-image: linear-gradient(to left,#2c092696, #070709);
+border-radius: 10px;
+border: 2px rgba(185, 29, 172, 0.068) solid;
+width: 800px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+
+.withdraw-error {
+color: red;
+}
+
+.withdraw-success {
+color: green;
+}
+
+.connectedButtonDiv {
+color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 0.5em;
+}
+
+.connectedButton {
+background-color: #38052F;
+border: none;
+color: white;
+padding: 0.5em;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.connectedButton:hover {
+background-color: #070709;
+}
+
