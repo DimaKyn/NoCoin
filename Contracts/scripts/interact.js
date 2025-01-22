@@ -1,12 +1,10 @@
 const { ethers } = require("hardhat");
 
-// scripts/interact.js
 export async function Interact() {
   try {
     // Get the deployed contract address from deployment
-    const CONTRACT_ADDRESS = process.env.CONTRACT_DESTINATION; // Replace with your deployed contract address
-    const RECIPIENT_ADDRESS = process.env.PRIVATE_KEY; // Your MetaMask wallet address
-
+    const CONTRACT_ADDRESS = process.env.CONTRACT_DESTINATION;
+    const RECIPIENT_ADDRESS = process.env.PRIVATE_KEY; 
     // Get contract instance
     const Token = await ethers.getContractFactory("NoCoin");
     const token = await Token.attach(CONTRACT_ADDRESS);
@@ -19,7 +17,7 @@ export async function Interact() {
     const deployerBalance = await token.balanceOf(deployer.address);
     console.log("Deployer balance:", ethers.formatEther(deployerBalance));
 
-    // Amount to transfer (e.g., 100 tokens)
+    // Amount to transfer
     const transferAmount = ethers.parseEther("100");
 
     // Transfer tokens

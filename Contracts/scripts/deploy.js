@@ -24,7 +24,6 @@ module.exports = {
   }
 };
 
-// scripts/deploy.js
 async function main() {
   console.log("Starting deployment...");
   

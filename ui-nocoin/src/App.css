@@ -1,5 +1,5 @@
 .backgroundDiv {
-  background-image: url("./public/background_gif.gif");
+  background-image: url("./background_gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   filter:  blur(40px) invert(0);
@@ -148,4 +148,5 @@ cursor: pointer;
 .connectedButton:hover {
 background-color: #070709;
 }
+
 
