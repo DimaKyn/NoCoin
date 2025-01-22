@@ -56,6 +56,7 @@ function App() {
     checkBalance();
   }, [checkAddress]);
 
+  // Handle transaction and update status message
   const handleTransaction = async (txPromise, successMessage) => {
     try {
       const tx = await txPromise;
