@@ -1,5 +1,5 @@
 .backgroundDiv {
-  background-image: url("./background_gif.gif");
+  background-image: url("/background_gif.gif");
   background-size: cover;
   background-repeat: no-repeat;
   filter:  blur(40px) invert(0);
